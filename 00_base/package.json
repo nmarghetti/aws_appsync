@@ -1,0 +1,8 @@
+{
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "yarn babel-node main.js"
+  },
+  "license": "MIT"
+}
