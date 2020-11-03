@@ -1,6 +1,8 @@
 # AWS AppSync with APIKEY
 
-Simple check on accessing AWS AppSync schema with API KEY access (<https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js#enable-queries-mutations-and-subscriptions>).
+Simple check on accessing AWS AppSync schema with API KEY access (<https://docs.amplify.aws/lib/graphqlapi/getting-started/q/platform/js#configure-your-application>).
+
+You can create your API through [AWS console](https://eu-west-1.console.aws.amazon.com/appsync/home?region=eu-west-1#/create).
 
 You can check the access with this:
 
@@ -10,6 +12,8 @@ region='eu-west-1'
 apiurl="https://xxxxxx.appsync-api.${region}.amazonaws.com/graphql"
 apikey='xxxx'
 query='{ "query": "{ __schema { types { name } } }" }'
+
+# Get the schema of your API
 curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:${apikey}" -d "$query" "$apiurl"
 ```
 

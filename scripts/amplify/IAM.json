@@ -1,0 +1,5 @@
+{
+  "policyName": "Developer",
+  "description": "Basic requirement for developer",
+  "policyDocument": "{\n    \"Version\": \"2012-10-17\",\n    \"Statement\": [\n        {\n            \"Sid\": \"VisualEditor0\",\n            \"Effect\": \"Allow\",\n            \"Action\": \"amplify:GetBranch\",\n            \"Resource\": \"arn:aws:amplify:*:570293644130:apps/*/branches/*\"\n        },\n        {\n            \"Sid\": \"VisualEditor1\",\n            \"Effect\": \"Allow\",\n            \"Action\": [\n                \"amplify:ListBackendEnvironments\",\n                \"amplify:GetBackendEnvironment\",\n                \"amplify:ListBranches\",\n                \"amplify:CreateBackendEnvironment\",\n                \"amplify:GetApp\"\n            ],\n            \"Resource\": \"arn:aws:amplify:*:570293644130:apps/*\"\n        },\n        {\n            \"Sid\": \"VisualEditor2\",\n            \"Effect\": \"Allow\",\n            \"Action\": \"amplify:ListApps\",\n            \"Resource\": \"*\"\n        }\n    ]\n}"
+}

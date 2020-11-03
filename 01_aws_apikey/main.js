@@ -4,6 +4,8 @@ Amplify.configure(awsconfig);
 
 const querySchema = `{ __schema { types { name } } }`;
 
+Auth.get;
+
 console.log(
   'You can also check with this command:\n',
   `curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:${awsconfig.aws_appsync_apiKey}" -d '{ "query": "${querySchema}" }' "${awsconfig.aws_appsync_graphqlEndpoint}"`,
